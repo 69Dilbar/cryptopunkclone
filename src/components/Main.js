@@ -16,11 +16,7 @@ const Main = ({ selectedPunk, punkListData }) => {
           <div className="punkContainer">
             <img
               className="selectedPunk"
-              // src={activePunk.img_original_url}
-              src={activePunk.profile_img_url}
-              // src={
-              //   "https://ipfs.thirdweb.com/ipfs/bafybeigqkficum3anns36jid3dxvc4yfauyuvqjulbg43n23qxn3ce3tyu"
-              // }
+              src={activePunk.img_original_url}
               alt="https://ipfs.thirdweb.com/ipfs/bafybeigqkficum3anns36jid3dxvc4yfauyuvqjulbg43n23qxn3ce3tyu"
             />
           </div>
@@ -28,7 +24,6 @@ const Main = ({ selectedPunk, punkListData }) => {
         <div className="punkDetails" style={{ color: "#fff" }}>
           <div className="title">
             {activePunk.name}
-            {/* extra punkContainer */}
             <span className="itemNumber">.#{activePunk.token_id}</span>
           </div>
           
@@ -36,10 +31,7 @@ const Main = ({ selectedPunk, punkListData }) => {
         <div className="owner">
           <div className="ownerImageContainer">
             <img src={activePunk.owner.profile_img_url} />
-            {/* src=
-            {
-              "https://ipfs.thirdweb.com/ipfs/bafybeigqkficum3anns36jid3dxvc4yfauyuvqjulbg43n23qxn3ce3tyu"
-            } */}
+            
           </div>
           <div className="ownerDetails">
             <div className="ownerNameAndHandle">
