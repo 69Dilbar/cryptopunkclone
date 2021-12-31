@@ -3,7 +3,6 @@ import instramLogo from "../assets/owner/instagram.png";
 import twitterLogo from "../assets/owner/twitter.png";
 import moreIcon from "../assets/owner/more.png";
 import "./Main.css";
-// { selectedPunk, punkListData }
 const Main = ({ selectedPunk, punkListData }) => {
   const [activePunk, setActivePunk] = useState(punkListData[0]);
   useEffect(() => {
@@ -35,7 +34,6 @@ const Main = ({ selectedPunk, punkListData }) => {
           </div>
           <div className="ownerDetails">
             <div className="ownerNameAndHandle">
-              {/* <div>0xf454126D0dA6aB6024DA0F634DAA06eA103141EC</div> */}
               <div>{activePunk.owner.address}</div>
               <div className="ownerHandle">@dilbarhassan37</div>
             </div>
