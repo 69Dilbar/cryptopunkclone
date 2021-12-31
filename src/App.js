@@ -7,7 +7,6 @@ import Punklisk from "./components/Punklisk";
 
 
 function App() {
-  // const [punkListData, setPunkListData] = useState([])
   const [punkListData, setPunkListData] = useState([]);
   const [selectedPunk, setSelectedPunk] = useState(0)
 
@@ -24,18 +23,9 @@ function App() {
     }
     return getMyNfts()
   }, [])
-// https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract
   return (
     <div className="app">
       <Header />
-      {/* <Main /> */}
-      {/* <CollectionCard
-        id={0}
-        name={"Bandana Punk"}
-        traits={[{ value: 7 }]}
-        image="https://ipfs.thirdweb.com/ipfs/bafybeigqkficum3anns36jid3dxvc4yfauyuvqjulbg43n23qxn3ce3tyu"
-      /> */}
-      {/* <Punklisk PunkLiskData={punkListData} /> */}
       {punkListData.length > 0 && (
         <>
           <Main punkListData={punkListData} selectedPunk={selectedPunk} />
